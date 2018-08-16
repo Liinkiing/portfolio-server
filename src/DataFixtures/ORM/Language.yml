@@ -1,0 +1,11 @@
+App\Entity\Language:
+  cSharp:
+    name: C#
+  javascript:
+    name: JavaScript
+  php:
+    name: PHP
+  html:
+    name: HTML
+  css:
+    name: CSS

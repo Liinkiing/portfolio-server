@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
@@ -22,15 +23,16 @@ class Category
     /**
      * @ORM\Column(type="string", length=255, unique=true)
      */
-    private $title;
+    private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Gedmo\Slug(fields={"name"})
      */
     private $slug;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Project", mappedBy="category")
+     * @ORM\ManyToMany(targetEntity="App\Entity\Project", mappedBy="categories")
      */
     private $projects;
 
@@ -44,14 +46,14 @@ class Category
         return $this->id;
     }
 
-    public function getTitle(): ?string
+    public function getName(): ?string
     {
-        return $this->title;
+        return $this->name;
     }
 
-    public function setTitle(string $title): self
+    public function setName(string $name): self
     {
-        $this->title = $title;
+        $this->name = $name;
 
         return $this;
     }
@@ -80,7 +82,7 @@ class Category
     {
         if (!$this->projects->contains($project)) {
             $this->projects[] = $project;
-            $project->setCategory($this);
+            $project->addCategory($this);
         }
 
         return $this;
@@ -90,10 +92,7 @@ class Category
     {
         if ($this->projects->contains($project)) {
             $this->projects->removeElement($project);
-            // set the owning side to null (unless already changed)
-            if ($project->getCategory() === $this) {
-                $project->setCategory(null);
-            }
+            $project->removeCategory($this);
         }
 
         return $this;

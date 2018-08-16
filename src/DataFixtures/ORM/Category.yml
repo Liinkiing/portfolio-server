@@ -1,0 +1,9 @@
+App\Entity\Category:
+  game:
+    name: Jeu
+  plugin:
+    name: Plugin
+  website:
+    name: Site web
+  bot:
+    name: Bot

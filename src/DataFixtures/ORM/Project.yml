@@ -1,0 +1,222 @@
+App\Entity\Project:
+  projectSlender:
+    title: Slender
+    platforms: ['@windows', '@linux', '@macOs']
+    thumbnailUrl: https://p5b4y2t6.ssl.hwcdn.net/game-thumbnail/500/30950-kmppivph.jpg
+    description: Un jeu vidéo réalisé en C# avec Unity3D
+    categories: ['@game']
+    languages: ['@cSharp']
+    body: |
+      # Slender - The Cursed Forest
+
+      Petit jeuvidéo réalisé dans le cadre de mes vacances scolaires. Je l'ai fait pour m'entraîner au moteur de jeu Unity3D et en C#.
+      En effet, j'avais la volonté d'apprendre ce langage, j'ai donc décidé de me lancer dans un projet d'une plus grande envergure.
+
+      Aujourd'hui, le jeu comptabilise actuellement plus de **100 000** vues, et est jouable en **multijoueur**.
+      Cela a été une réelle opportunité, j'ai pu en apprendre sur plusieurs facettes de la création de jeuvidéo, en passant par la réalisation
+      d'effet spéciaux, à la partie réseau du jeu.
+
+      Le jeu est disponible sur \[GameJolt\](http://gamejolt.com/games/slender-the-cursed-forest/30950) et vous pouvez le télécharger
+  projectSnakeParty:
+    title: Snake Party
+    platforms: ['@windows', '@linux', '@macOs']
+    thumbnailUrl: https://puu.sh/tYX5L/6ac9720562.jpg
+    description: Un petit jeu vidéo réalisé en C# avec Unity3D
+    categories: ['@game']
+    languages: ['@cSharp']
+    body: |
+      # Snake Party
+
+      Ce petit jeu vidéo est inspiré du jeu \[Curve Fever\](http://forum.curvefever.com/play2.php).
+      J'ai décidé de faire un jeu de la sorte car cela faisait un petit bout de temps que je n'avais pas touché à Unity.
+      En effet, mon dernier gros projet sur Unity a été mon jeu vidéo **\[Slender The Cursed Forest\](/project/slender)**.
+
+      J'ai voulu donc reprendre la programmation en C#, et je me suis ainsi lancé comme défi de reproduire ce petit jeu, simple de premier abord
+      mais très addictif ! Le principe du jeu est simple: il faut être le dernier survivant. Afin d'éviter de mourir, vous devez éviter d'entrer en
+      collison avec les autres joueurs.
+
+      Pour ce projet, j'ai voulu dépendre le moins sur des ressources externes. C'est pour cela que je n'ai
+      utilisé aucun packages issu de l'Asset Store d'Unity, et que j'ai préféré tout refaire de zéro afin de me ré-habituer au moteur.
+  projectTutotoformes:
+    title: Tutotoformes
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgCRd/10f39c6807.jpg
+    description: Une plateforme de tutoriels en ligne
+    categories: ['@website']
+    languages: ['@html', '@css', '@javascript', '@php']
+    body: |
+      # Tutotoformes
+
+      Ce projet a été notre projet de fin d'année pour notre DUT MMI.
+      En effet, ayant été sélectionné pour terminer mes études à Québec, nous avons dû réaliser ce projet pour notre Semestre 3.
+
+      Il s'agit d'une plateforme de tutoriels en ligne. Des utilisateurs s'inscrivent, et peuvent ainsi suivre leur cours, débloquer des succès...
+      Ce projet a été très enrichissant, et nous avons utilisé le framework PHP **Symfony**.
+
+      \[Accéder au site web\](https://tutotoformes.herokuapp.com)
+  projectCvitae:
+    title: C-Vitae
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgFj6/8639b52981.jpg
+    description: Une plateforme de mise en relation
+    categories: ['@website']
+    languages: ['@html', '@css', '@javascript', '@php']
+    body: |
+      # C-Vitae
+
+      Réalisation d'une plateforme réunissant les étudiants de ma promotion en DUT MMI.
+
+      Ce projet a été fait dans le cadre du projet tutoré en fin de première année en MMI. J'ai donc utilisé
+      Symfony pour le développement, utilisation donc de Doctrine comme ORM (permet de faire la liaison entre la couche
+      logique de l'application et la couche de données), PostgreSQL en base de données.
+
+      Les étudiants ont la possibilité de modifier leur CV, de rajouter des informations à propos d'eux, et peuvent directement être
+      contacté via leur profil publique d'étudiant
+
+      \[Accéder au site web\](https://c-vitae.herokuapp.com)
+  projectTimelify:
+    title: Timelify
+    platforms: ['@web']
+    thumbnailUrl: https://puu.sh/tgGeY/dc5c5b207a.jpg
+    description: Un plugin jQuery affichant une timeline
+    categories: ['@plugin']
+    languages: ['@javascript']
+    body: |
+      # Timelify
+      Ce petit plugin jQuery a été créé dans le cadre de mon CV interactif disponible à
+      \[cette adresse\](http://perso-etudiant.u-pem.fr/~ojbara/cv_interactif/).
+
+      En effet, j'avais le besoin d'afficher mes différents projets réalisés sous forme d'une timeline. J'ai donc décidé,
+      afin de m'entraîner, de réaliser un petit plugin.
+
+      \[Accéder au dépôt du plugin\](https://github.com/Liinkiing/jquery-timelify)
+  projectBlockThatMario:
+    title: Block that mario
+    platforms: ['@windows']
+    thumbnailUrl: https://puu.sh/tgFWh/8c864d76c4.png
+    description: Un jeu vidéo réalisé sous Construct2
+    categories: ['@game']
+    languages: ['@javascript']
+    body: |
+      # Block That Mario
+
+      Ce jeu a été réalisé lorsque je commençais tout juste le développement. En effet, j'avais découvert le
+      logiciel \[Construct2\](https://www.scirra.com/construct2), qui permettait la création de jeu assez
+      facilement.
+
+      J'ai donc décidé de tenter ma chance, et j'ai réalisé un jeu de plateforme inspiré de Mario
+      (les ressources graphiques ne sont pas de moi).
+  projectTwitterBot:
+    title: Bot Twitter
+    platforms: ['@windows', '@linux', '@macOs']
+    thumbnailUrl: http://puu.sh/tgJGT/3c5c727670.png
+    description: Un bot réalisé en JavaScript sur Node.js
+    categories: ['@plugin', '@bot']
+    languages: ['@javascript']
+    body: |
+      # Bot twitter
+
+      Lors de mes études, un ami à moi m'avait parlé des concours Twitter. En effet, les concours twitter se
+      déroulent de la manière suivante: nous devons RT un tweet et follow la personne qui organise le concours. Je me
+      suis donc demandé pourquoi ne pas essayer de créer un bot pour twitter qui réaliserait cela tout seul.
+
+      Pour le moment, le bot m'a fait gagné 3 concours, et il a été conçu de manière très modulable, c'est-à-dire
+      qu'il peut très facilement s'installer sous n'importe quel serveur Nodejs.
+      Tous les détails concernant sa
+      mise en place sont disponible sur le dépôt du projet sur mon GitHub.
+
+      \[Accéder au dépot du plugin\](https://github.com/Liinkiing/twitter-bot)
+  projectLinkingCms:
+    title: Linking CMS
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgLgS/8300ef3d0f.jpg
+    description: Un CMS réalisé sur Symfony
+    categories: ['@website']
+    languages: ['@html', '@javascript', '@php']
+    body: |
+      # CMS Personel
+
+      Un CMS (pour Content Management System) permet d'administrer et de gérer du contenu sur un site web.
+      Wordpress est un exemple très connu de CMS, car ce dernier permet, de manière très aisé, d'administrer tout type
+      de contneu via une interface d'administration.
+
+      J'ai donc voulu récréer quelque chose de similaire à Wordpress
+      (évidemment avec beaucoup moins de fonctionnalité que ce dernier), car à cette période là, je commençais tout
+      juste le développement sous Symfony.
+
+      J'ai donc créé de A à Z, y compris l'apparence, un CMS permettant de
+      gérer des utilisateurs et leur attribuer des rôles (Auteur, Modérateur, Administrateur, Utilisateur etc...), de
+      gérer un blog mais aussi de gérer un protfolio et ajouter des projets directement depuis une interface.
+  projectFlappyBird:
+    title: Flappy Bird
+    platforms: ['@android']
+    thumbnailUrl: http://puu.sh/tgLCo/c9d7577941.png
+    description: Un petit clone de Flappy Bird réalisé sous Unity3D
+    categories: ['@game']
+    languages: ['@cSharp']
+    body: |
+      # Flying Duck
+
+      Après avoir créé mon jeuvidéo Slender the cursed forest sous Unity3D, j'ai voulu tester le moteur 2D du logiciel.
+
+      En effet, la conception de jeu en 2D est quelque chose qui me plaît fortement, car j'aime beaucoup les jeux en
+      deux dimensions. Je me suis donc lancé dans la conception d'un jeu comme Flappy Bird, où l'on doit juste faire sauter
+      un personnage entre deux obstacles.
+
+      J'ai cependant ajouté quelques petit plus par rapport à l'original, tel que l'ajout
+      de quelques power-ups, ou encore la difficulté croissante au fur et à mesure de l'avancement.
+  projectChinois1:
+    title: Portrait chinois 1
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgN8I/ac10aed932.jpg
+    description: Un projet réalisé dans le cadre de mon DUT
+    categories: ['@website']
+    languages: ['@html', '@css', '@javascript']
+    body: |
+      # Portrait chinois 1
+
+      Lors de ma première année de mon DUT MMI, nous avions comme projet au premier semestre de réalisé un portrait
+      chinois.
+
+      Qu'est ce qu'un portrait chinois ?
+
+      \> Un portrait chinois est un jeu littéraire, de type questionnaire de Proust, où il s'agit de déceler certains
+      aspects de la personnalité d'un individu ou d'identifier des goûts ou des préférences personnelles, au travers
+      d'un questionnaire basé sur l'identification à des personnes, des objets ou des éléments divers
+
+      J'ai donc décidé de réaliser deux versions de
+      mon portrait chinois.
+      \[Accéder au site web\](http://perso-etudiant.u-pem.fr/~ojbara/portrait_chinois1/)
+  projectChinois2:
+    title: Portrait chinois 2
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgNPK/2d0b673bb9.jpg
+    description: Un projet réalisé dans le cadre de mon DUT
+    categories: ['@website']
+    languages: ['@html', '@css', '@javascript']
+    body: |
+      # Portrait chinois 2
+
+      J'ai décidé de réaliser une deuxième version de mon portrait chinois à la demande de ma professeure d'intégration web,
+      qui voulait que j'essaie quelque chose d'autre.
+
+      J'ai donc décidé d'opter pour un slider en plein écran, que j'ai donc réalisé en JavaScript.
+      \[Accéder au site web\](http://perso-etudiant.u-pem.fr/~ojbara/portrait_chinois2/)
+  projectVuejsTest:
+    title: Vuejs test
+    platforms: ['@web']
+    thumbnailUrl: http://puu.sh/tgOx7/d5d8dd70d0.jpg
+    description: Oui, ce que vous voyez actuellement
+    categories: ['@website']
+    languages: ['@html', '@css', '@javascript']
+    body: |
+      # Mon site web
+
+      Pourquoi mettre ce site web dans mes projets me diriez-vous ? Et bien car j'ai utilisé le framework VueJS afin
+      de créer mon site. Il permet de crééer des composants ré-utilisables (tel que la lightbox que j'utilise pour afficher la
+      galerie de mes projets, que j'ai donc réalisé aussi avec VueJS), mais aussi de crééer des SPA (Single Page Application).
+
+      En effet, ce site web est en réalité plus qu'un simple One Page, car il y a en réalisé de la logique derrière,
+      tel que par exemple une gestion des pages qui n'existent pas (essayez par exemple cette url \[/j-existe-pas\](/j-existe-pas).
+
+      Il s'agit donc de mon tout premier projet sous VueJS

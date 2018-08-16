@@ -1,0 +1,11 @@
+App\Entity\Platform:
+  windows:
+    name: Windows
+  macOs:
+    name: MacOS
+  linux:
+    name: Linux
+  android:
+    name: Android
+  web:
+    name: Web
