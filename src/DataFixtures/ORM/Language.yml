@@ -1,11 +1,16 @@
 App\Entity\Language:
   cSharp:
     name: C#
+    iconUrl: https://svgshare.com/i/7rM.svg'
   javascript:
     name: JavaScript
+    iconUrl: https://svgshare.com/i/7ta.svg
   php:
     name: PHP
+    iconUrl: https://svgshare.com/i/7sV.svg
   html:
     name: HTML
+    iconUrl: https://svgshare.com/i/7t6.svg
   css:
     name: CSS
+    iconUrl: https://svgshare.com/i/7t7.svg

@@ -29,6 +29,11 @@ class Language
      */
     private $projects;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $iconUrl;
+
     public function __construct()
     {
         $this->projects = new ArrayCollection();
@@ -75,6 +80,18 @@ class Language
             $this->projects->removeElement($project);
             $project->removeLanguage($this);
         }
+
+        return $this;
+    }
+
+    public function getIconUrl(): ?string
+    {
+        return $this->iconUrl;
+    }
+
+    public function setIconUrl(?string $iconUrl): self
+    {
+        $this->iconUrl = $iconUrl;
 
         return $this;
     }

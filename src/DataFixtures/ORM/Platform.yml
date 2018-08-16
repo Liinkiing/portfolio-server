@@ -1,11 +1,16 @@
 App\Entity\Platform:
   windows:
     name: Windows
+    iconUrl: https://svgshare.com/i/7tS.svg
   macOs:
     name: MacOS
+    iconUrl: https://svgshare.com/i/7tT.svg
   linux:
     name: Linux
+    iconUrl: https://svgshare.com/i/7s2.svg
   android:
     name: Android
+    iconUrl: https://svgshare.com/i/7sC.svg
   web:
     name: Web
+    iconUrl: https://svgshare.com/i/7t6.svg
