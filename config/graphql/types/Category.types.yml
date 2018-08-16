@@ -1,0 +1,13 @@
+Category:
+  type: object
+  inherits: [Node]
+  config:
+    interfaces: [Node]
+    description: A project category
+    fields:
+      name:
+        type: String!
+        description: The name of the category
+      slug:
+        type: String!
+        description: The slug of the category

@@ -1,0 +1,40 @@
+Project:
+  type: object
+  inherits: [Node]
+  config:
+    interfaces: [Node]
+    description: A project
+    fields:
+      title:
+        type: String!
+        description: The title of the project
+      slug:
+        type: String!
+        description: The slug of the project
+      categories:
+        type: '[Category!]'
+        description: The categories associated to this project
+      languages:
+        type: '[Language!]'
+        description: The languages associated to this project
+      platforms:
+        type: '[Platform!]'
+        description: The platforms associated to this project
+      tags:
+        type: '[Tag!]'
+        description: The tags associated to this project
+      description:
+        type: String!
+        description: The description of the project
+      thumbnailUrl:
+        type: String!
+        description: The thumbnail URL of the project
+      createdAt:
+        type: DateTime!
+        description: The creation date of the project
+      updatedAt:
+        type: DateTime
+        description: The date when the project has been updated
+      body:
+        type: HTMLMarkdown!
+        description: The body converted from Markdown into HTML

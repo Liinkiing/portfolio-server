@@ -1,0 +1,16 @@
+Image:
+  type: object
+  inherits: [Node]
+  config:
+    interfaces: [Node]
+    description: An image in a project
+    fields:
+      project:
+        type: Project!
+        description: The associated project of the image
+      url:
+        type: String!
+        description: The url of the image
+      title:
+        type: String
+        description: The title (if given) of the image

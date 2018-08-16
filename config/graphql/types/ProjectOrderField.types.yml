@@ -1,0 +1,11 @@
+ProjectOrderField:
+  type: enum
+  config:
+    description: Properties by which projects can be ordered
+    values:
+      CREATED_AT:
+        value: createdAt
+        description: Allows ordering a list of projects by when they were created
+      UPDATED_AT:
+        value: updatedAt
+        description: Allows ordering a list of projects by when they were updated

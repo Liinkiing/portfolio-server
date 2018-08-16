@@ -1,4 +1,21 @@
-#Query:
-#  type: object
-#  config:
-#    fields:
+Query:
+  type: object
+  config:
+    fields:
+      node:
+        builder: "Relay::Node"
+        builderConfig:
+          nodeInterfaceType: Node
+          idFetcher: '@=resolver("App\\GraphQL\\Resolver\\GlobalIdResolver", [value])'
+      projects:
+        description: Get all projects
+        type: ProjectConnection!
+        argsBuilder: Relay::Connection
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\ProjectsResolver", [args])'
+        args:
+          first:
+            type: Int
+            defaultValue: 30
+          orderBy:
+            type: ProjectOrder
+            defaultValue: { field: createdAt, direction: DESC }

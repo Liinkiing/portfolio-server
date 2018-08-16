@@ -1,0 +1,10 @@
+Platform:
+  type: object
+  inherits: [Node]
+  config:
+    interfaces: [Node]
+    description: A platform where a project could have been made
+    fields:
+      name:
+        type: String!
+        description: The name of the platform

@@ -1,0 +1,10 @@
+Tag:
+  type: object
+  inherits: [Node]
+  config:
+    interfaces: [Node]
+    description: A tag where a project could be tagged
+    fields:
+      name:
+        type: String!
+        description: The name of the tag

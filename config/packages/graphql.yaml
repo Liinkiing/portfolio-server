@@ -1,7 +1,8 @@
 overblog_graphql:
     definitions:
         schema:
-#            query: Query
+            query: Query
+            types: [Category, Image, Language, Platform, Project, Tag]
         mappings:
             auto_discover: false
             types:
