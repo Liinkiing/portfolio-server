@@ -8,7 +8,7 @@ use Overblog\GraphQLBundle\Definition\Resolver\ResolverInterface;
 use Overblog\GraphQLBundle\Relay\Connection\Output\Connection;
 use Overblog\GraphQLBundle\Relay\Connection\Output\ConnectionBuilder;
 
-class ProjectsResolver implements ResolverInterface
+class SearchProjectsResolver implements ResolverInterface
 {
     private $repository;
 
@@ -19,11 +19,16 @@ class ProjectsResolver implements ResolverInterface
 
     public function __invoke(Argument $args): Connection
     {
-        $orderBy = $args->offsetGet('orderBy');
-        $projects = $this->repository->findBy(
-            [],
-            [$orderBy['field'] => $orderBy['direction']]
-        );
+        [$orderBy, $categories, $platforms, $languages, $operator] = [
+            $args->offsetGet('orderBy'),
+            $args->offsetGet('categories'),
+            $args->offsetGet('platforms'),
+            $args->offsetGet('languages'),
+            $args->offsetGet('operator'),
+        ];
+
+        $projects = $this->repository->search($categories, $platforms, $languages, $orderBy, $operator);
+
         $connection = ConnectionBuilder::connectionFromArray($projects, $args);
         $connection->totalCount = \count($projects);
 

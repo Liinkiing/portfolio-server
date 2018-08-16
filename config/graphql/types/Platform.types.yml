@@ -8,6 +8,9 @@ Platform:
       name:
         type: String!
         description: The name of the platform
+      slug:
+        type: String!
+        description: The slug of the platform
       iconUrl:
         type: String
         description: The icon of the platform

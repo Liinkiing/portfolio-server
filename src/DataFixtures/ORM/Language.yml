@@ -1,6 +1,7 @@
 App\Entity\Language:
   cSharp:
     name: C#
+    slug: csharp
     iconUrl: https://svgshare.com/i/7sy.svg
   javascript:
     name: JavaScript

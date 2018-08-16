@@ -8,6 +8,9 @@ Language:
       name:
         type: String!
         description: The name of the programming language
+      slug:
+        type: String!
+        description: The slug of the programming language
       iconUrl:
         type: String
         description: The icon of the programming language

@@ -19,3 +19,32 @@ Query:
           orderBy:
             type: ProjectOrder
             defaultValue: { field: createdAt, direction: DESC }
+      project:
+        description: Get a project by its slug
+        type: Project!
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\ProjectResolver", [args])'
+        args:
+          slug:
+            type: String!
+      searchProjects:
+        description: Search in projects
+        type: ProjectConnection!
+        argsBuilder: Relay::Connection
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\SearchProjectsResolver", [args])'
+        args:
+          first:
+            type: Int
+            defaultValue: 30
+          categories:
+            type: '[String!]'
+          platforms:
+            type: '[String!]'
+          languages:
+            type: '[String!]'
+          operator:
+            type: ConditionOperator
+            description: Allows to tell if we want projects that have BOTH categories, platforms and languages specified, or if it has ANY of one of the specified arguments
+            defaultValue: AND
+          orderBy:
+            type: ProjectOrder
+            defaultValue: { field: createdAt, direction: DESC }

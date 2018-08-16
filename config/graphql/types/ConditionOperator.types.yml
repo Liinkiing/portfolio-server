@@ -1,0 +1,9 @@
+ConditionOperator:
+  type: enum
+  config:
+    description: Allows to specify a search combinator
+    values:
+      OR:
+        value: OR
+      AND:
+        value: AND
