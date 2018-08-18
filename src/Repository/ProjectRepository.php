@@ -73,6 +73,26 @@ class ProjectRepository extends ServiceEntityRepository
             }
         }
 
+        if ($operator === 'AND' && $languages) {
+            $qb
+                ->groupBy('p')
+                ->having(
+                    $qb->expr()->eq(
+                        $qb->expr()->countDistinct('languages'), \count($languages)
+                    )
+                );
+        }
+
+        if ($operator === 'AND' && $platforms) {
+            $qb
+                ->groupBy('p')
+                ->having(
+                    $qb->expr()->eq(
+                        $qb->expr()->countDistinct('platforms'), \count($platforms)
+                    )
+                );
+        }
+
         $qb
             ->addOrderBy('p.' . $orderBy['field'], $orderBy['direction']);
 
